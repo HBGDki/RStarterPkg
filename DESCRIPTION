@@ -1,0 +1,19 @@
+Package: RStarterPkg
+Version: 0.0.0.9000
+Title: What the Package Does (one line, title case)
+Authors@R: c(
+    person("First", "Last", email = "first.last@example.com", role = c("aut", "cre")),
+    person("Another", "Contributor", email = "another.contributor@example.com", role = c("ctb"))
+  )
+Description: What the package does (one paragraph).
+Depends:
+    R (>= 3.3.0)
+Imports:
+    hbgd (>= 0.3.2),
+    roxygen2 (>= 5.0.1),
+    testthat (>= 1.0.2)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+Roxygen: list(wrap = FALSE)

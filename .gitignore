@@ -12,8 +12,19 @@
 .Rproj.user/
 
 # produced vignettes
+vignettes/figure
 vignettes/*.html
 vignettes/*.pdf
 
 # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
 .httr-oauth
+
+# System files
+.DS_Store
+*.Rproj
+.Rproj.user
+
+# Testing
+tests/testthat/Rplots.pdf
+revdep/checks\.rds
+.lintr_cache

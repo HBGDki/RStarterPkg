@@ -1,0 +1,23 @@
+# Sample .travis.yml for R projects
+
+language: r
+warnings_are_errors: true
+
+env:
+ global:
+   - CRAN: http://cran.rstudio.com
+
+
+# install locally to avoid reverse dependency
+r_github_packages:
+  - jimhester/covr # code coverage check
+  - jimhester/lintr # code lint
+
+after_success:
+  - Rscript -e 'covr::codecov()'
+
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change

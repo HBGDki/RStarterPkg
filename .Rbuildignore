@@ -1,0 +1,10 @@
+.lintr
+tests/testthat/.lintr_cache
+\.git
+^\.travis\.yml$
+\.DS_Store
+..Rcheck
+CONTRIBUTING\.md
+.Rproj
+.tar.gz
+^codecov\.yml$
