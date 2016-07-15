@@ -1,6 +1,8 @@
 # Use
 R package skeleton.
 
+Milestones for package development: [https://github.com/HBGDki/hbgdStatSummary/blob/master/Milestones.md](Milestones.md)
+
 # Documentation
 
 The R package ``roxygen2`` will be used to automatically generate LaTeX documentation.  A full explanation about the ``roxygen2`` package [can be found here](https://cran.r-project.org/web/packages/roxygen2/vignettes/rd.html).

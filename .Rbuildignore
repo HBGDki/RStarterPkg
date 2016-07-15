@@ -9,3 +9,4 @@ CONTRIBUTING\.md
 .tar.gz
 ^codecov\.yml$
 ^CONDUCT\.md$
+^Milestones\.md$
