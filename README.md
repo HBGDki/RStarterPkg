@@ -1,7 +1,11 @@
 # Use
-R package skeleton.
+This R package serves as a skeleton package (starter package) for HBGDki R package development.  Copy and paste all files and then adjust how you see fit.  This package already as
+* unit testing with [https://github.com/hadley/testthat](`testthat`)
+* code coverage with [https://github.com/jimhester/covr](`covr`), which is displayed at [https://codecov.io]
+* coding style with [https://github.com/jimhester/lintr](`lintr`)
+* passive package testing with [https://travis-ci.org]
 
-Milestones for package development: [https://github.com/HBGDki/hbgdStatSummary/blob/master/Milestones.md](Milestones.md)
+# [https://github.com/HBGDki/hbgdStatSummary/blob/master/Milestones.md](Milestones for package development Document)
 
 # Documentation
 
