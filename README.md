@@ -75,3 +75,6 @@ Short guides to help you get started using GitHub.
     * How to use Markdown to format text
     * How to leverage GitHub’s automatic Markdown rendering
     * How to apply GitHub’s unique Markdown extensions
+
+# Code of Conduct
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.

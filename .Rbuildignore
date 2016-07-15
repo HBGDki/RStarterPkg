@@ -8,3 +8,4 @@ CONTRIBUTING\.md
 .Rproj
 .tar.gz
 ^codecov\.yml$
+^CONDUCT\.md$
