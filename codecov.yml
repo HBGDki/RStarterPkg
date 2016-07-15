@@ -1,15 +1,22 @@
 
 coverage:
-  range: "70...95" # coverage starts at 70% and is "perfect" at 95%
+  # coverage starts at 70% and is "perfect" at 95%
+  range: "70...95"
+
   status:
     patch:
       default:
-        branches: # only perform code coverage on master and dev by default
+        # only perform code coverage on master and dev by default
+        branches:
         - master
         - dev
-        target: '80' # the new patch should cover at least 80% to pass
+
+        # the new patch should cover at least 80% to pass
+        target: '80' 
+
     project:
       default:
-        branches: # only perform code coverage on master and dev by default
+        # only perform code coverage on master and dev by default
+        branches:
         - master
         - dev
