@@ -1,5 +1,6 @@
 cache_directory: ".lintr_cache"
 linters: with_defaults(
+    line_length_linter(100), # allow for 100 character length lines
     NULL
   )
 exclusions:
