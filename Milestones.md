@@ -140,4 +140,4 @@ packagedocs::init_vignettes()
 
 `rd.Rmd` is a shell wrapper for your R documentation.  A third file will be generated called `rd_index.Rmd`.  This file will contain the basic structure for `rd.Rmd`.  
 
-With these generated files, your package will now have two vignettes!  Please visit [HBGDki/packagedocs](https://github.com/HBGDki/packagedocs) for more information.
+With these generated files, your package will now have two vignettes!  Please visit [HBGDki/packagedocs](https://github.com/HBGDki/packagedocs#vignettes) for more information.
