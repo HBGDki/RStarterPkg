@@ -25,11 +25,11 @@ devtools::check()
 
 ## Travis-CI, Codecov, and Coding Style
 
-[Travis-CI](travis-ci.org) is an passive testing service that downloads your R package dependencies and runs "R CMD check" the github package.  It will also run all tests and upload code coverage statistics to [Codecov](https://codecov.io/gh).  This service will execute when github.com receives a code push.
+[Travis-CI](travis-ci.org) is an passive testing service that downloads your R package dependencies and runs "R CMD check" on your github package.  It will also run all tests and upload code coverage statistics to [Codecov](https://codecov.io/gh).  This service will execute when github.com receives a code push.
 
-Both Travis-CI and Codecov must be activated to work.  Activate your R package for Travis-CI at [https://travis-ci.org/profile] and Codecov at [https://codecov.io/gh].
+Both Travis-CI and Codecov must be activated to work.  Activate your R package for Travis-CI at [https://travis-ci.org/profile] and your Codecov account at [https://codecov.io/gh].
 
-Travis-CI will check for coding style using the ``lintr`` package.  This test is already provided in ``tests/thestthat/test-lintr.R``. Please visit [jimhester/lintr](https://github.com/jimhester/lintr#project-configuration) for more information. "Most of the default linters are based on [Hadley Wickham's R Style Guide](http://r-pkgs.had.co.nz/style.html)."
+We will check for coding style using the ``lintr`` package.  This test is already provided in ``tests/thestthat/test-lintr.R``. Please visit [jimhester/lintr](https://github.com/jimhester/lintr#project-configuration) for more information. "Most of the default linters are based on [Hadley Wickham's R Style Guide](http://r-pkgs.had.co.nz/style.html)."
 
 
 
