@@ -3,7 +3,8 @@ Version: 0.0.0.9000
 Title: What the Package Does (one line, title case)
 Authors@R: c(
     person("First", "Last", email = "first.last@example.com", role = c("aut", "cre")),
-    person("Another", "Contributor", email = "another.contributor@example.com", role = c("ctb"))
+    person("Another", "Author", email = "another.author@example.com", role = c("aut")),
+    person("Some", "Contributor", email = "some.contributor@example.com", role = c("ctb"))
   )
 Description: What the package does (one paragraph).
 Depends:
