@@ -2,7 +2,16 @@
 
 The following milestones must be met when collaborating with R in the HBGDki user group.
 
-## Loading Package
+## 0. Make a new HBGDki repository
+
+Make a new repository that matches your package name exactly.  The naming requirements are:
+* contain only ASCII letters, numbers, and dot
+* have at least two characters
+* start with a letter and not end in a dot
+
+With HBGDki, we'd prefer if there were only ASCII letters and no numbers in the package and repository name.
+
+## 1. Loading Package
 
 The package must be able to be loaded with:
 
@@ -12,9 +21,9 @@ devtools::load_all()
 
 This is imperative to complete as daily package development depends on this functionality.
 
-## Code Style
+## 2. Code Style
 
-This milestone is kept near the top, as it must always be met.  Coding style is a very slippery slope and difficult to recover from with full confidence.  ("... did I fix all my name changes??")
+This milestone is kept near the top, as it must always be met.  Coding style is a very slippery slope and difficult to recover from with full confidence.  (*"... did I fix all my name changes??"*)
 
 Since caching is enabled when linting, it wont' take long to check for coding style.
 
@@ -22,9 +31,7 @@ Since caching is enabled when linting, it wont' take long to check for coding st
 devtools::lint()
 ```
 
-## Documentation
-
-# Documentation
+## 3. Documentation
 
 The R package ``roxygen2`` will be used to automatically generate the LaTeX man folder R documentation.  ``roxygen2`` is great for keeping your documentation directly next to your function.  All ``roxygen2`` elements start their line with a comment immediately followed by an apostrophe `#'`.
 
@@ -65,12 +72,15 @@ A good example of documentation can be seen in the [`hbgd` package WHO stadards]
 #'   xlab = "age (years)", auto.key = TRUE)
 #' @export
 #' @rdname who_centile2value
+who_centile2value <- function(x, p, y_var, x_var, sex, data) {
+  # code
+}
 ```
 
 
-## Unit Tests and Package Coverage
+## 4. Unit Tests and Package Coverage
 
-### Testing
+### 4.a Testing
 
 There are many different ways that unit testing may be approached.  It is of my belief unit tests should cover about 95% of all code (where possible).  
 * If this can be done by only testing the top level functions, then great!
@@ -90,7 +100,7 @@ To test your package, run:
 devtools::test()
 ```
 
-### Package Coverage
+### 4.b Package Coverage
 
 To check for package coverage within R, run the snippet below.  It may take a while, as it runs all of the package tests.
 ```{r}
@@ -110,7 +120,7 @@ covr::zero_coverage(cov)
 
 All three of these functions are very useful to reaching the 95% goal of package coverage
 
-## R CMD check
+## 5. R CMD check
 
 To get a package on CRAN, a package must have
 * 0 ERRORs
@@ -127,7 +137,7 @@ devtools::check()
 This will run through CRAN's `R CMD check` as how CRAN checks for packages.  If, when the check is complete and there are no ERRORs, WARNINGs, or NOTEs, your package is ready for CRAN! Congratulations!
 
 
-## Vignettes
+## 6. Vignettes
 
 Once a package is passing CRAN checks and is ready for deployment, we need some documentation to tell a real world story or example that the package solves.  
 @HBGDki has created an R package called `packagedocs`.  All @HBGDki R packages will use `packagedocs` to produce two vignettes: `index.Rmd` and `rd.Rmd`.  Both vignettes can be initialized `packagedocs` with:
@@ -140,4 +150,4 @@ packagedocs::init_vignettes()
 
 `rd.Rmd` is a shell wrapper for your R documentation.  A third file will be generated called `rd_index.Rmd`.  This file will contain the basic structure for `rd.Rmd`.  
 
-With these generated files, your package will now have two vignettes!  Please visit [HBGDki/packagedocs](https://github.com/HBGDki/packagedocs#vignettes) for more information.
+With these generated files, your package will now have two vignettes!  Please visit [HBGDki/packagedocs](https://HBGDki.github.io/packagedocs) for more information.
