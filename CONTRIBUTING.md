@@ -20,6 +20,11 @@ of the new design, etc. This document is meant to save you time
 as it allows the team a chance to provide feedback on the proposes changes. The document also allows the team to prepare for large changes to the code
 base. We welcome change but also want to ensure that code quality is kept high.
 
+## Work on your contribution
+
+Please check to make sure that your prepared update passes the [HBGD milestones](https://github.com/HBGDki/RStarterPkg/blob/master/Milestones.md#milestones). Pull requests may be refused until all milestones are met.
+
+
 ## Submit your pull request
 
 Github provides a nice [overview on how to create a pull request](https://help.github.com/articles/creating-a-pull-request).
